@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="adminBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <left>
+      <VBox prefHeight="800.0" prefWidth="261.0" style="-fx-background-color: linear-gradient(to top, #cd5c5c, #d56360, #de6964, #e67069, #ef776d, #f37d6f, #f88271, #fc8873, #fd8e74, #fe9476, #fe9a78, #ffa07a);" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="308.0" prefWidth="261.0">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="72.0" layoutY="188.0" size="150" />
+                  <Button fx:id="logoutButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#adminLogout" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="25" tabSize="20" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="mainButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cambiarInterfaz" prefHeight="66.0" prefWidth="268.0" style="-fx-background-color: transparent; -fx-cursor: hand;" stylesheets="@application/application.css" text=" Principal" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="newRegistroButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cambiarInterfaz" prefHeight="66.0" prefWidth="268.0" style="-fx-background-color: transparent; -fx-cursor: hand;" stylesheets="@application/application.css" text=" Nuevo registro" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="registroButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cambiarInterfaz" prefHeight="66.0" prefWidth="268.0" style="-fx-background-color: transparent; -fx-cursor: hand;" stylesheets="@application/application.css" text=" Registros" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+            <Button fx:id="more_InfoButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cambiarInterfaz" prefHeight="66.0" prefWidth="268.0" style="-fx-background-color: transparent; -fx-cursor: hand;" stylesheets="@application/application.css" text=" Acerca de" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="INFO_CIRCLE" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="743.0" prefWidth="695.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane layoutX="4.0" layoutY="179.0" prefHeight="617.0" prefWidth="732.0">
+               <children>
+                  <AnchorPane fx:id="infoPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Text layoutX="45.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esta aplicación ha sido desarrollada mediante el lenguaje de programación Java," wrappingWidth="641.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="45.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="usando el framework JavaFx, junto con el IDE Eclipse." wrappingWidth="641.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="45.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creador:  Ramsés Ramírez Vallejo." wrappingWidth="313.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="45.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha:  febrero 2022." wrappingWidth="313.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="45.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto: A00344520@tec.mx / chamses1999@gmail.com." wrappingWidth="476.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="45.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Linkedin: https://www.linkedin.com/in/rams%C3%A9s-ram%C3%ADrez-vallejo-701367229/" wrappingWidth="670.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="45.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GitHub: https://github.com/HouseCham" wrappingWidth="355.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="newRegisterPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <TextField fx:id="nombreField" layoutX="61.0" layoutY="90.0" prefHeight="35.0" prefWidth="267.0" promptText="Nombre" />
+                        <Text fill="#e86e60" layoutX="61.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre completo" wrappingWidth="221.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="carreraField" layoutX="61.0" layoutY="252.0" prefHeight="35.0" prefWidth="267.0" promptText="Carrera" />
+                        <Text fill="#e86e60" layoutX="61.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrera" wrappingWidth="221.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="matriculaField" layoutX="61.0" layoutY="398.0" prefHeight="35.0" prefWidth="267.0" promptText="Matrícula" />
+                        <Text fill="#e86e60" layoutX="61.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matrícula" wrappingWidth="221.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="telField" layoutX="414.0" layoutY="172.0" prefHeight="35.0" prefWidth="267.0" promptText="Número de teléfono" />
+                        <Text fill="#e86e60" layoutX="414.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" wrappingWidth="221.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="montoField" layoutX="414.0" layoutY="320.0" prefHeight="35.0" prefWidth="267.0" promptText="Cantidad" />
+                        <Text fill="#e86e60" layoutX="414.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boletos" wrappingWidth="221.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="387.0" layoutY="433.0" mnemonicParsing="false" onAction="#guardarNuevoRegistro" prefHeight="91.0" prefWidth="294.0" style="-fx-background-color: #e86e60; -fx-cursor: hand;" text="  Realizar nuevo registro" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="FILE" size="20" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="tablaRegistroPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <TableView fx:id="tablaRegistro" layoutX="4.0" layoutY="98.0" minHeight="-Infinity" prefHeight="517.0" prefWidth="728.0" style="-fx-background-color: transparent; -fx-cursor: hand;" stylesheets="@application/tableView.css">
+                           <columns>
+                              <TableColumn fx:id="idColumn" prefWidth="57.0" text="ID" />
+                              <TableColumn fx:id="nombreColumn" prefWidth="304.80003356933594" text="Nombre" />
+                              <TableColumn fx:id="carreraColumn" prefWidth="76.79998779296875" text="Carrera" />
+                              <TableColumn fx:id="matriculaColumn" prefWidth="109.5999755859375" text="Matrícula" />
+                              <TableColumn fx:id="montoColumn" prefWidth="91.20001220703125" text="no. Boletos" />
+                              <TableColumn fx:id="fechaColumn" prefWidth="88.79998779296875" text="Fecha" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="botonBuscar2" layoutX="79.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #cd5c5c; -fx-cursor: hand;">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" size="20" />
+                           </graphic>
+                        </Button>
+                        <TextField fx:id="buscarRegistroField" layoutX="143.0" layoutY="41.0" prefHeight="39.0" prefWidth="355.0" promptText="Buscar graduado" style="-fx-background-color: transparent; -fx-border-color: #cd5c5c; -fx-border-width: 0px 0px 2px 0px;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <ImageView fitHeight="486.0" fitWidth="495.0" layoutX="122.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Grad_Logo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#f5786b" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiesta de graduación:  16 de diciembre" wrappingWidth="341.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#f5786b" layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salon: Viñedo" wrappingWidth="341.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+               </children>
+            </StackPane>
+            <AnchorPane fx:id="registroPane" layoutY="53.0" prefHeight="118.0" prefWidth="744.0" style="-fx-background-color: #ec8b80;">
+               <children>
+                  <Text fx:id="etiquetaStatus" fill="WHITE" layoutX="38.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Principal" wrappingWidth="626.13671875">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

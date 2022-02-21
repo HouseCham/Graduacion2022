@@ -1,0 +1,11 @@
+Username: l8AegdMAQ2
+
+Database name: l8AegdMAQ2
+
+Password: FJDZedNViq
+
+Server: remotemysql.com
+
+Port: 3306
+
+https://remotemysql.com/phpmyadmin/db_structure.php?server=1&db=l8AegdMAQ2
